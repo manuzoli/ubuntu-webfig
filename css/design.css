@@ -1,6 +1,7 @@
 body {
 	margin: 0px;
 	background: #333335;
+	padding-bottom: 100px;
 }
 
 
@@ -113,4 +114,70 @@ body {
 
 .edit:hover {
 	text-decoration: underline;
+}
+
+
+.form {
+	border: 3px solid #4c4c4d;
+	padding: 25px;
+	padding-bottom: 40px;
+}
+
+.form:before {
+	content: attr(data-id);
+	margin-bottom: 20px;
+	display: block;
+	border-bottom: 1px solid #4c4c4d;
+	margin-bottom: 25px;
+	padding-bottom: 20px;	
+}
+
+.wpa {
+	border-bottom: 1px solid #4c4c4d;
+	margin-bottom: 25px;
+	padding-bottom: 25px;	
+}
+
+.submit {
+	position: absolute;
+	right: 20px;
+	bottom: 10px;
+	line-height: 25px;
+	color: #d4de6a;
+	cursor: pointer;
+}
+.cancel {
+	position: absolute;
+	right: 20px;
+	top: 10px;
+	line-height: 25px;
+	color: #3eb6d7;
+	font-size: 14px;
+	cursor: pointer;	
+}
+
+.submit:hover,
+.cancel:hover {
+	text-decoration: underline;	
+}
+
+.form .mode {
+	margin-bottom: 12px;
+}
+
+.form input {
+	margin-bottom: 10px;
+	border: 0px;
+	line-height: 25px;
+	padding-left: 5px;
+	background: rgba(255,255,255,0.1);
+	color: white;
+	font-size: 15px;
+	font-family: monospace;
+}
+
+.inactive {
+	pointer-events: none;
+	opacity: 0.4;
+	filter: grayscale(100%);
 }

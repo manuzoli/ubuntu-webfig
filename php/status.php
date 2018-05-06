@@ -78,7 +78,7 @@
 		if (strpos($type, 'no wireless extensions') !== false) {
 			return 'ethernet';
 		} else {
-			return 'wireless';
+			return 'wifi';
 		}		
 	}
 
